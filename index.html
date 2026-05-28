@@ -39,11 +39,17 @@
         </a>
 
         <ul class="nav-links" role="list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#why-us" data-i18n="nav.whyUs">Why Us</a></li>
+          <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
+
+        <div class="lang-toggle" role="group" aria-label="Language selector">
+          <button class="lang-btn lang-btn--active" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+          <button class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button>
+        </div>
 
         <!-- Hamburger (mobile only) -->
         <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
@@ -62,30 +68,30 @@
   <section id="hero" aria-label="Hero">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <p class="hero-eyebrow">Sustainable Wealth Management Since 2007</p>
-      <h1>Grow Your Wealth<br />with Confidence</h1>
-      <p class="hero-sub">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Sustainable Wealth Management Since 2007</p>
+      <h1 data-i18n="hero.headline">Grow Your Wealth<br />with Confidence</h1>
+      <p class="hero-sub" data-i18n="hero.sub">
         We craft bespoke, ESG-aligned investment strategies tailored to your financial goals,
         risk appetite, and long-term vision — sustainable growth backed by decades of market expertise.
       </p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn--primary">Get Started</a>
-        <a href="#why-us" class="btn btn--outline">Learn More</a>
+        <a href="#contact" class="btn btn--primary" data-i18n="hero.cta.primary">Get Started</a>
+        <a href="#why-us" class="btn btn--outline" data-i18n="hero.cta.secondary">Learn More</a>
       </div>
 
       <!-- Animated counters -->
       <div class="counters fade-in" aria-label="Key statistics">
         <div class="counter-item">
           <span class="counter-number" data-target="2.4" data-suffix="B" data-prefix="$">0</span>
-          <span class="counter-label">Assets Under Management</span>
+          <span class="counter-label" data-i18n="counter.aum">Assets Under Management</span>
         </div>
         <div class="counter-item">
           <span class="counter-number" data-target="1200" data-suffix="+">0</span>
-          <span class="counter-label">Clients Served</span>
+          <span class="counter-label" data-i18n="counter.clients">Clients Served</span>
         </div>
         <div class="counter-item">
           <span class="counter-number" data-target="18" data-suffix=" Yrs">0</span>
-          <span class="counter-label">Years of Experience</span>
+          <span class="counter-label" data-i18n="counter.years">Years of Experience</span>
         </div>
       </div>
     </div>
@@ -97,9 +103,9 @@
   ============================================================ -->
   <section id="why-us" class="section" aria-labelledby="why-us-title">
     <div class="container">
-      <p class="section-eyebrow">Our Difference</p>
-      <h2 class="section-title" id="why-us-title">Why Choose Us</h2>
-      <p class="section-subtitle">
+      <p class="section-eyebrow" data-i18n="whyUs.eyebrow">Our Difference</p>
+      <h2 class="section-title" id="why-us-title" data-i18n="whyUs.title">Why Choose Us</h2>
+      <p class="section-subtitle" data-i18n="whyUs.subtitle">
         We combine deep market knowledge with ESG-focused investing and a client-first approach to build sustainable wealth that stands the test of time.
       </p>
 
@@ -116,8 +122,8 @@
               <path d="M11 11l3.5 3.5M17.5 17.5l3.5 3.5M21 11l-3.5 3.5M9.5 17.5l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>Personalized Strategy</h3>
-          <p>Every portfolio is built around your unique goals, timeline, and risk tolerance — no cookie-cutter solutions.</p>
+          <h3 data-i18n="card1.title">Personalized Strategy</h3>
+          <p data-i18n="card1.body">Every portfolio is built around your unique goals, timeline, and risk tolerance — no cookie-cutter solutions.</p>
         </article>
 
         <!-- Card 2 -->
@@ -130,8 +136,8 @@
               <circle cx="24" cy="10" r="2" fill="currentColor"/>
             </svg>
           </div>
-          <h3>Proven Track Record</h3>
-          <p>Consistent outperformance across market cycles, with a disciplined investment process refined over 18 years.</p>
+          <h3 data-i18n="card2.title">Proven Track Record</h3>
+          <p data-i18n="card2.body">Consistent outperformance across market cycles, with a disciplined investment process refined over 18 years.</p>
         </article>
 
         <!-- Card 3 -->
@@ -143,8 +149,8 @@
               <path d="M11 16l3 3 7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Transparent Fees</h3>
-          <p>No hidden charges. Clear fee structures so you always know exactly what you're paying and what you're getting.</p>
+          <h3 data-i18n="card3.title">Transparent Fees</h3>
+          <p data-i18n="card3.body">No hidden charges. Clear fee structures so you always know exactly what you're paying and what you're getting.</p>
         </article>
 
         <!-- Card 4 -->
@@ -156,8 +162,8 @@
               <path d="M8 24l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>ESG Investing</h3>
-          <p>We integrate environmental, social, and governance criteria into every portfolio — aligning your wealth with values that drive long-term, responsible growth.</p>
+          <h3 data-i18n="card4.title">ESG Investing</h3>
+          <p data-i18n="card4.body">We integrate environmental, social, and governance criteria into every portfolio — aligning your wealth with values that drive long-term, responsible growth.</p>
         </article>
 
       </div>
@@ -170,9 +176,9 @@
   ============================================================ -->
   <section id="testimonials" class="section section--alt" aria-labelledby="testimonials-title">
     <div class="container">
-      <p class="section-eyebrow">Client Stories</p>
-      <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
-      <p class="section-subtitle">
+      <p class="section-eyebrow" data-i18n="testimonials.eyebrow">Client Stories</p>
+      <h2 class="section-title" id="testimonials-title" data-i18n="testimonials.title">What Our Clients Say</h2>
+      <p class="section-subtitle" data-i18n="testimonials.subtitle">
         Real results from real people — hear from those who've trusted us with their financial future.
       </p>
 
@@ -184,13 +190,13 @@
             <div class="testimonial-inner">
               <div class="testimonial-quote-icon" aria-hidden="true">&#8220;</div>
               <blockquote>
-                <p>Apex completely transformed my retirement planning. After 12 years with them, my portfolio has grown beyond what I thought possible. Their advisors actually listen and adjust as my life changes.</p>
+                <p data-i18n="t1.quote">Apex completely transformed my retirement planning. After 12 years with them, my portfolio has grown beyond what I thought possible. Their advisors actually listen and adjust as my life changes.</p>
               </blockquote>
               <footer class="testimonial-footer">
                 <div class="avatar" aria-hidden="true">MT</div>
                 <cite>
-                  <span class="client-name">Margaret T.</span>
-                  <span class="client-role">Retired Engineer, 64</span>
+                  <span class="client-name" data-i18n="t1.name">Margaret T.</span>
+                  <span class="client-role" data-i18n="t1.role">Retired Engineer, 64</span>
                 </cite>
               </footer>
             </div>
@@ -201,13 +207,13 @@
             <div class="testimonial-inner">
               <div class="testimonial-quote-icon" aria-hidden="true">&#8220;</div>
               <blockquote>
-                <p>As a small business owner, I needed someone who understood my irregular income and business risks. Apex built a strategy that handles both — I finally feel financially secure for the first time.</p>
+                <p data-i18n="t2.quote">As a small business owner, I needed someone who understood my irregular income and business risks. Apex built a strategy that handles both — I finally feel financially secure for the first time.</p>
               </blockquote>
               <footer class="testimonial-footer">
                 <div class="avatar" aria-hidden="true">DR</div>
                 <cite>
-                  <span class="client-name">David R.</span>
-                  <span class="client-role">Small Business Owner</span>
+                  <span class="client-name" data-i18n="t2.name">David R.</span>
+                  <span class="client-role" data-i18n="t2.role">Small Business Owner</span>
                 </cite>
               </footer>
             </div>
@@ -218,13 +224,13 @@
             <div class="testimonial-inner">
               <div class="testimonial-quote-icon" aria-hidden="true">&#8220;</div>
               <blockquote>
-                <p>The transparency Apex offers is unmatched. I know exactly where every dollar is invested and why. Their quarterly reports are clear, honest, and actually help me understand market movements.</p>
+                <p data-i18n="t3.quote">The transparency Apex offers is unmatched. I know exactly where every dollar is invested and why. Their quarterly reports are clear, honest, and actually help me understand market movements.</p>
               </blockquote>
               <footer class="testimonial-footer">
                 <div class="avatar" aria-hidden="true">PS</div>
                 <cite>
-                  <span class="client-name">Priya S.</span>
-                  <span class="client-role">Healthcare Executive</span>
+                  <span class="client-name" data-i18n="t3.name">Priya S.</span>
+                  <span class="client-role" data-i18n="t3.role">Healthcare Executive</span>
                 </cite>
               </footer>
             </div>
@@ -269,9 +275,9 @@
   ============================================================ -->
   <section id="contact" class="section" aria-labelledby="contact-title">
     <div class="container">
-      <p class="section-eyebrow">Start Today</p>
-      <h2 class="section-title" id="contact-title">Get in Touch</h2>
-      <p class="section-subtitle">
+      <p class="section-eyebrow" data-i18n="contact.eyebrow">Start Today</p>
+      <h2 class="section-title" id="contact-title" data-i18n="contact.title">Get in Touch</h2>
+      <p class="section-subtitle" data-i18n="contact.subtitle">
         Tell us about your financial goals and we'll reach out within one business day.
       </p>
 
@@ -295,13 +301,14 @@
         <div class="form-row">
           <!-- Full Name -->
           <div class="form-group">
-            <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+            <label for="full-name" data-i18n="form.labelName">Full Name <span class="required" aria-hidden="true">*</span></label>
             <input
               type="text"
               id="full-name"
               name="full_name"
               autocomplete="name"
               placeholder="Jane Smith"
+              data-i18n-placeholder="ph.name"
               aria-required="true"
             />
             <span class="field-error" id="full-name-error" role="alert"></span>
@@ -309,13 +316,14 @@
 
           <!-- Email -->
           <div class="form-group">
-            <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+            <label for="email" data-i18n="form.labelEmail">Email Address <span class="required" aria-hidden="true">*</span></label>
             <input
               type="email"
               id="email"
               name="email"
               autocomplete="email"
               placeholder="jane@example.com"
+              data-i18n-placeholder="ph.email"
               aria-required="true"
             />
             <span class="field-error" id="email-error" role="alert"></span>
@@ -325,25 +333,26 @@
         <div class="form-row">
           <!-- Phone -->
           <div class="form-group">
-            <label for="phone">Phone Number</label>
+            <label for="phone" data-i18n="form.labelPhone">Phone Number</label>
             <input
               type="tel"
               id="phone"
               name="phone"
               autocomplete="tel"
               placeholder="+1 (555) 000-0000"
+              data-i18n-placeholder="ph.phone"
             />
           </div>
 
           <!-- Investment Range -->
           <div class="form-group">
-            <label for="investment-range">Investment Range <span class="required" aria-hidden="true">*</span></label>
+            <label for="investment-range" data-i18n="form.labelRange">Investment Range <span class="required" aria-hidden="true">*</span></label>
             <select id="investment-range" name="investment_range" aria-required="true">
-              <option value="">Select a range…</option>
-              <option value="under-50k">Under $50,000</option>
-              <option value="50k-250k">$50,000 – $250,000</option>
-              <option value="250k-1m">$250,000 – $1,000,000</option>
-              <option value="1m-plus">$1,000,000+</option>
+              <option value="" data-i18n="form.rangePlaceholder">Select a range…</option>
+              <option value="under-50k" data-i18n="form.rangeOpt1">Under $50,000</option>
+              <option value="50k-250k" data-i18n="form.rangeOpt2">$50,000 – $250,000</option>
+              <option value="250k-1m" data-i18n="form.rangeOpt3">$250,000 – $1,000,000</option>
+              <option value="1m-plus" data-i18n="form.rangeOpt4">$1,000,000+</option>
             </select>
             <span class="field-error" id="investment-range-error" role="alert"></span>
           </div>
@@ -351,17 +360,18 @@
 
         <!-- Message -->
         <div class="form-group">
-          <label for="message">Message</label>
+          <label for="message" data-i18n="form.labelMessage">Message</label>
           <textarea
             id="message"
             name="message"
             rows="5"
             placeholder="Tell us about your financial goals, current situation, or any questions you have…"
+            data-i18n-placeholder="ph.message"
           ></textarea>
         </div>
 
         <button type="submit" class="btn btn--primary btn--submit" id="submit-btn">
-          <span class="btn-text">Send Enquiry</span>
+          <span class="btn-text" data-i18n="form.submit">Send Enquiry</span>
           <span class="btn-spinner" aria-hidden="true"></span>
         </button>
 
@@ -391,7 +401,7 @@
             <span class="logo-name">Apex</span><span class="logo-sub"> Asset Management</span>
           </span>
         </div>
-        <p class="footer-tagline">Building sustainable financial futures since 2007.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Building sustainable financial futures since 2007.</p>
         <!-- Social icons -->
         <div class="social-links" aria-label="Social media">
           <a href="#" class="social-link" aria-label="LinkedIn" rel="noopener noreferrer">
@@ -414,18 +424,18 @@
 
       <!-- Quick links -->
       <nav class="footer-links" aria-label="Footer navigation">
-        <h3>Quick Links</h3>
+        <h3 data-i18n="footer.quickLinks">Quick Links</h3>
         <ul role="list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#why-us" data-i18n="nav.whyUs">Why Us</a></li>
+          <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
 
       <!-- Contact info -->
       <div class="footer-contact">
-        <h3>Contact Us</h3>
+        <h3 data-i18n="footer.contactUs">Contact Us</h3>
         <address>
           <p>1 Financial Plaza, Suite 800<br />New York, NY 10004</p>
           <p><a href="tel:+12125550100">+1 (212) 555-0100</a></p>
@@ -439,7 +449,7 @@
       <p class="footer-copy">
         &copy; <span id="copyright-year"></span> Apex Asset Management. All rights reserved.
       </p>
-      <p class="footer-disclaimer">
+      <p class="footer-disclaimer" data-i18n="footer.disclaimer">
         Investments carry risk. Past performance does not guarantee future results.
         All information provided is for informational purposes only and does not constitute financial advice.
       </p>
@@ -448,5 +458,22 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- ============================================================
+       WHATSAPP FLOATING CHAT BUTTON
+  ============================================================ -->
+  <a
+    id="whatsapp-float"
+    href="https://wa.me/PHONENUMBER?text=Hello%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    class="whatsapp-float"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path fill="#fff" d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.472 2.027 7.773L0 32l8.476-2.003A15.938 15.938 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.77-1.853l-.486-.29-5.03 1.188 1.21-4.906-.317-.504A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.306-9.907c-.4-.2-2.366-1.167-2.733-1.3-.367-.133-.633-.2-.9.2s-1.033 1.3-1.267 1.567c-.233.267-.467.3-.867.1-.4-.2-1.688-.622-3.215-1.983-1.188-1.059-1.99-2.367-2.223-2.767-.233-.4-.025-.616.175-.815.18-.18.4-.467.6-.7.2-.233.267-.4.4-.667.133-.267.067-.5-.033-.7-.1-.2-.9-2.167-1.233-2.967-.325-.78-.655-.674-.9-.686l-.767-.013c-.267 0-.7.1-1.067.5s-1.4 1.367-1.4 3.333 1.433 3.867 1.633 4.133c.2.267 2.82 4.306 6.832 6.037.954.412 1.699.658 2.28.843.958.305 1.83.262 2.52.159.768-.115 2.366-.967 2.7-1.9.333-.933.333-1.733.233-1.9-.1-.167-.367-.267-.767-.467z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">Chat with us</span>
+  </a>
 </body>
 </html>

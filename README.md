@@ -17,6 +17,8 @@ A modern, sustainability-focused one-page website for an ESG asset management fi
 - **Why Choose Us** — 4 feature cards (Personalized Strategy, Proven Track Record, Transparent Fees, ESG Investing) with hover lift and staggered fade-in
 - **Testimonials carousel** — auto-rotates every 5 s, supports swipe, keyboard, and dot navigation
 - **Enquiry form** — client-side validation, async submission via FormSubmit (no backend needed)
+- **Language toggle** — English / 中文 (Simplified) / 日本語, persisted in `localStorage`
+- **WhatsApp floating chat button** — bottom-left quick-contact widget
 - **Responsive** — mobile-first, tested from 320 px to 1920 px
 - **Scroll animations** — IntersectionObserver fade-in on all sections
 
@@ -35,7 +37,7 @@ A modern, sustainability-focused one-page website for an ESG asset management fi
 ```
 index.html                  # All markup — 6 sections in DOM order
 styles.css                  # All styles — numbered sections mirror HTML order
-script.js                   # All behaviour — 9 modules inside one DOMContentLoaded
+script.js                   # All behaviour — 10 modules inside one DOMContentLoaded
 .github/
     workflows/
         deploy.yml          # Deploys to GitHub Pages on every push to main
