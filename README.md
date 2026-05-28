@@ -4,6 +4,10 @@ A modern, professional one-page website for an asset management firm — built w
 
 **Live site:** https://AC9999123.github.io/AC999/
 
+## Preview
+
+![Apex Asset Management](screenshot.png)
+
 ---
 
 ## Features
